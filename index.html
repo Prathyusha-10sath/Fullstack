@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
 </head>
 <body>
 <link rel="stylesheet" href="style.css">
-    <div class="nav">
-        <div class="home"><b>HOME</b></div>
-        <div class="home"><b>ABOUT</b></div>
-        <div class="home"><b>SERVICE</b></div>
-        <div class="home"><b>CONTACT</b></div>
-    </div><br>
-
-    <form>
-        <h1 style="font-family:fantasy ;">..........BIO-DATA..........</h1>
-        <label for="name">NAME:</label>
-        <input type="text"><br>
-        <label for="email">EMAIL ID:</label>
-        <input type="email"><br>
-        <label for="registerno">REGISTER NUMBER:</label>
-        <input type="number"><br>
-        <label for="department">DEPARTMENT:</label>
-        <input type="text"><br>
+<div class="nav">
+        <div><b>🏠HOME🏠</b></div>
+        <div><b>🫧ABOUT🫧</b></div>
+        <div><b>📞CONTACT📞</b></div> 
+        <div><b>🤖SERVICE🤖</b></div>
+    </div>
+<form>
+    <h1>............BIO-DATA.............</h1>
+    <label for="name">NAME:</label>
+    <input type="text"id="name"><br>
+    <label for="email">EMAIL:</label>
+    <input type="text"id="email"><br>
+    <label type="registerno">REGISTER NO:</label>
+    <input type="number"id="registerno"><br>
+    <label type="department">DEPARTMENT:</label>
+    <input type="text"id="department"><br>
+    <button type="button" onclick=showName()>Submit</button>
+     <h1 id="result"></h1>
+</form>
+     <script> 
+        function showName(){                                                                                                                                                                                                                                                                                                   
+            const name=document.getElementById('name').value
+            const  email=document.getElementById('email').value
+            const registerno =document.getElementById('registerno').value
+            const  department=document.getElementById('department').value
+            document.getElementById('result').innerText=`
+            ${name} 
+            ${email}
+            ${registerno}
+            ${department}`
+            
+        }
+     </script>   
     
-     <button onclick=showName()>SUBMIT</button>
-        <h1 id="result"></h1>
         
-    </form>
-    
-           
-    </script>
 </body>
 </html>
+   
