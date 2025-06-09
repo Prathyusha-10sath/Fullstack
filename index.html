@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-
+<link rel="stylesheet" href="style.css">
     <div class="nav">
-        <div class="home">HOME</div>
-        <div class="home">ABOUT</div>
-        <div class="home">SERVICE</div>
-        <div class="home">CONTACT</div>
-          
-    </div>
+        <div class="home"><b>HOME</b></div>
+        <div class="home"><b>ABOUT</b></div>
+        <div class="home"><b>SERVICE</b></div>
+        <div class="home"><b>CONTACT</b></div>
+    </div><br>
+
     <form>
-        <h1>BIO-DATA</h1>
+        <h1 style="font-family:fantasy ;">..........BIO-DATA..........</h1>
         <label for="name">NAME:</label>
         <input type="text"><br>
         <label for="email">EMAIL ID:</label>
@@ -26,6 +26,12 @@
         <label for="department">DEPARTMENT:</label>
         <input type="text"><br>
     
+     <button onclick=showName()>SUBMIT</button>
+        <h1 id="result"></h1>
+        
     </form>
+    
+           
+    </script>
 </body>
 </html>

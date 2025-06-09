@@ -1,0 +1,13 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    text-align: center;
+     /* align-items: left;  */
+
+}
+button{
+    align-items: center;
+    text-align: right;
+}
